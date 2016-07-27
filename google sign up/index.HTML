@@ -1,0 +1,188 @@
+<html DOCTYPE="HTML">
+<head>
+<title>Create your Google Account</title>
+
+<link href="style.css" rel="stylesheet" type="text/css"></link>
+
+<script>
+
+function passmatch()
+{
+	var compare, pass1, pass2;
+	pass1 = document.getElementById("p1").value;
+	pass2 = document.getElementById("p2").value;
+	compare=pass1.localeCompare(pass2);
+	if(compare==0)
+	{	
+	document.getElementById('p1').style.borderColor="green";
+	alert("password matched");
+	}
+	else
+        {
+	document.getElementById('p2').style.borderColor="red";
+	alert("Password doesn't matched.");
+	}
+	}
+</script>
+
+</head>
+
+<body>
+<div>
+<div id="header">
+	<img src="images/logo.png" width="112" height="36">
+    	    
+    
+    <button id="button1">Sign in</button>
+    
+</div>
+<div class="container">
+
+<div class="p1">
+	<span><h1>Create your Google Account</h1></span>
+</div>
+
+<div class="signup_area">
+<table cellspacing=5 border=0>
+<form name="signup">
+
+
+<tr >
+	<td><p>Name</p></td>
+</tr>
+<tr>
+	<td><input type="text" name="firstName" width=50  autocomplete="on" placeholder="First" size="13px" required autofocus >
+
+
+	<input type="text" name="lastName"    autocomplete="on" placeholder="Last" size="13px" required></td>
+</tr>
+
+</tr >
+<tr>
+	<td><p>Choose your username</p></td>
+</tr>
+<tr>
+	<td><input type="text" name="userName"  autocomplete="on" class="box" required></td>
+</tr>
+<tr >
+	<td><p>Create your password</p></td>
+</tr>
+<tr>
+	<td><input type="password" name="password1"   id="p1"  autocomplete="off" class="box" required></td>
+</tr>
+<tr >
+	<td><p>Confirm your password</p></td>
+</tr>
+<tr>
+	<td><input type="password" name="password2"   id="p2" autocomplete="off" class="box" required></td>
+</tr>
+
+<tr >
+	<td><p>Birthday</p></td>
+</tr>
+<tr>	
+	<td><select required class="dob">
+			<option value="">Month</option>
+			<option value="january">January</option>
+			<option value="febraury">February</option>
+			<option value="march">March</option>
+			<option value="april">April</option>
+			<option value="may">May</option>
+			<option value="june">June</option>
+			<option value="july">July</option>
+			<option value="august">August</option>
+			<option value="september">September</option>
+			<option value="october">October</option>
+			<option value="november">November</option>
+			<option value="december">December</option>
+	</select>
+	<input type="text" name="day"   autocomplete="on" placeholder="Day" size="3px" required>
+	<input type="text" name="year"  autocomplete="on" placeholder="Year" size="5px" required></td>
+</tr>
+<tr>
+	<td>Gender</td>
+</tr>
+<tr>
+	<td><select required class="box">
+		<option value="">I am..</option>
+		<option value="male">Male</option>
+		<option value="female">Female</option>
+		<option value="others">Others</option></select></td>
+</tr>
+<tr>
+	<td>Mobile phone</td>
+</tr>
+<tr>
+	<td><input type="number" name="mobile"   autocomplete="on" maxlength="10" class="box" required></td>
+</tr>
+<tr>
+	<td>Location</td>
+</tr>
+<tr>
+	<td><input type="text" name="location"   autocomplete="on" value="India"  class="box" required readonly></td>
+</tr>
+<tr>
+	<td><p>Your current email address</p></td>
+</tr>
+<tr>
+	<td><input type="text" name="userName"  autocomplete="on" class="box" required></td>
+</tr>
+<tr>
+	<td>
+    	<p>Prove you're not a robot<p>
+    </td>
+</tr>
+
+<tr>
+    <td><p><input type="checkbox">
+    Skip this verification(phone verification may be requried)</p>
+    </td> 
+</tr>
+<tr>
+	<td></td>
+</tr>
+<tr>
+	<td><p><input type="checkbox" name="confirm"   checked>I agree Google <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></p></td>
+<tr>
+	<td><button onClick="passmatch()" id="button1">Next step</button></td>
+</tr>
+</form></table></div>
+
+<div class="left_area">
+<h2>One account is all you need</h2>
+<h3>One free account gets you into everything Google.</h3>
+	<img src="images/one.png" id="imglogo"><img src="images/two.png" id="imglogo"><img src="images/three.png" id="imglogo"><img src="images/four.png" id="imglogo"><img src="images/five.png" id="imglogo"><img src="images/six.png" id="imglogo"><img src="images/seven.png" id="imglogo"><img src="images/eight.png" id="imglogo">
+<h2>Take it all with you</h2>
+<h3>Switch between devices, and pick up wherever you left off.</h3>
+<img src="images/laptop.png">
+
+</div>
+<div class="p1">
+<span class="lang"><a href="#">Learn more</a> about why we ask for this information.</span>
+</div>
+</div>
+
+<div id="footer">
+<span ><font color="grey">Google</font></span>
+<a href="#"><span><font color="black">Privacy & Terms</font></span></a>
+<a href="#"><span><font color="black">Help</font></span></a>
+
+<select class="lang">
+	<option value="1">Hindi</option>
+	<option value="2">English(United Kingdom)</option>
+    <option value="3" selected>English(United States)</option>
+    <option value="4">Chinese</option>
+</select><img src="images/universal_language_settings-21.png" class="lang">
+<p>
+	
+	<address>
+    Developer--> <cite><b>TheScrap</b><br></cite>
+    <font color="#0066CC">221-B, Baker Street<br>
+    Reborn</font>
+    </address>
+</p>
+</div>
+
+
+</body>
+</html>
