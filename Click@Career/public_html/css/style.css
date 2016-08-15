@@ -1,0 +1,267 @@
+*{
+    text-decoration: none;   
+}
+html,
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+}
+.logo{
+    z-index: 1;
+}
+.container-fluid{
+    margin: 0 auto;
+}
+.affix {
+    top: 0;
+    width: 100%;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+.affix-top {
+    position: static;
+    top: -35px;
+}
+.affix + .container-fluid {
+    padding-top: 70px;
+}
+
+.navbar-inverse{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0,122,204,0.7);
+    border: none;
+    border-radius: 0;
+    z-index: 1;
+    //width: 100%;
+}/*----------------------- This helping in adjusting the collapse button timing----------------------*/
+@media (min-width: 768px) and (max-width: 1200px) {
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-header .collapse, .navbar-toggle {
+        display:block !important;
+    }
+    .navbar-header {
+        float:none;
+    }
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+.nav li:hover{
+    background-color: #ff7f18;
+}
+
+
+.dropdown-menu{
+   
+    display: none;             /* its hiding the dropdown menu */
+    width: 1000px;
+    background-color: #ff7f18;
+}
+.dropdown-menu li{
+    display: inline-block;          /* making dropdown in 2rd Level Menu */ 
+}
+
+
+.dropdown-menu li a{
+    color: white; 
+}
+
+.dropdown-menu ul li a:hover {  
+    //display: block;
+    //background-color: rgb(0,122,204);
+    color: black; 
+}
+
+.dropdown-menu li ul li{    
+                            
+    display: block;  /* making dropdown in 3rd Level Menu */  
+    
+}
+
+.dropdown-menu li ul li a{
+    color: white; 
+    text-decoration: none;
+}
+//.nav:hover .nav li a{
+//    background-color: #ff7f18;    
+//}
+.container{
+    position:relative;
+}
+.dropdown-menu{
+    position: absolute;
+    left: -300px;
+}
+/*------------------------------------------Menu And Base of Page is Desgined above----------------------------------------------*/
+.padding{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: white;
+    //margin-top: 100px;
+    margin-bottom: 200px;
+    //-ms-transform: rotate(-8deg); /* IE 9 */
+    //-webkit-transform: rotate(-8deg); /* Safari */
+    //transform: rotate(-8deg);
+}
+
+
+/*------------------------------------------Login page Design Go Here----------------------------------------------*/
+
+
+.need-help{
+    float:right;
+    font-weight: lighter;
+    font-size: smaller;
+}
+.login-btn-position{
+    float:right;
+}
+
+/*---------------Down Fixed Footer Method---------------*/
+.wrapper{
+    min-height:100%;
+    position:relative;
+}
+.content {
+        //background-color: yellowgreen;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        padding-top: 100px;
+        //z-index: -1;
+	padding-bottom:500px; /* Height of the footer element */
+}
+.footer{
+        background-color: #2a2c2c;
+	width:100%;
+	
+	position:absolute;
+	bottom:0;
+	left:0;
+    
+}
+
+
+/*------------Form Style---------------*/
+.form-control{
+    border: 1px solid gray;
+    border-radius: 0;
+}
+.btn-lg{
+    border-radius: 0;
+}
+/*----------Signup Page----------------*/
+.signup-background-color{
+    background-color: white;
+    
+}
+.signup-background{
+    background-image: url('images/signup-cover.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+.signup-form{
+    float:right;
+    margin: 60px auto;
+    padding:40px;  
+    background-color: white;  
+    border-radius: 5px;
+}
+
+/*---------------------- Contact us Styling----------------------------- */
+
+.contact-head{
+    font-family: serif;
+    font-weight: bolder;
+    font-size: 48px;
+    //background-color: red;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+.contact-us-left{
+   // background-image: url('images/contact_us_cover.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    
+    
+}
+
+.contact-form{
+    margin: 60px auto;
+    padding:100px 40px 100px 40px;
+    background-color: white;  
+    border-radius: 5px;
+}
+.contact-right-sub li:nth-child(even){
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+.contact-right-sub li:nth-child(odd){
+    padding-left: 10px;
+    padding-bottom: 10px;
+    //font-size: 22px;
+}
+.contact-right-sub li:first-child{
+    
+    padding-left: 0;
+    color: #5bc0de;
+    font-size: 26px;
+    font-weight: bold;
+}
+.map{
+    width:100%;
+    height: 300px;
+}
+
+
+
+/*---------------------- Footer Design ------------------------*/
+
+.footer div div h2{
+    color: yellow;
+    font-weight: bolder;
+}
+
+.footer div h3 {
+    color: white;
+    font-weight: bold;
+}
+.footer div ul {
+    color: white;
+     border-left: 5px solid red;
+    list-style-type: none;
+    padding: 10px 20px;
+}
+.footer div ul li a{
+    display: block;
+    height: 30px;
+    font-weight: bold;
+}
+.footer div ul li a:hover {
+    background-color: #ff7f18;
+    color:black;
+    text-decoration: none;
+}
+.footer div form div input,.footer div form div textarea{
+    border: none;
+    
+    border-bottom: 1px solid yellow;
+    background-color: #2a2c2c;
+}
+.footer div form div input:focus ,.footer div form div textarea:focus{
+    background-color: white;
+}
